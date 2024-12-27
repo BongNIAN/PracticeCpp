@@ -16,7 +16,7 @@ double Avg(int sum, int size) {
     return (double)sum / size;
 }
 
-void Sort(int* sum, int size, int type) {
+void Sort(int* sum,int size,int type) {
     printf("throw\n");
     int tmp = 0;
 
@@ -31,7 +31,7 @@ void Sort(int* sum, int size, int type) {
                     sum[j] = sum[j + 1];
                     sum[j + 1] = tmp;
 
-                    cout << "change is : " << sum[j] << " " << sum[j + 1] << endl;
+                    cout <<"change is : "<< sum[j]  << " " << sum[j + 1] << endl;
                 }
 
             }
@@ -40,12 +40,12 @@ void Sort(int* sum, int size, int type) {
     if (type == 1) {
 
         for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size - -i - 1; j++) {
+            for (int j = 0; j < size - -i-1; j++) {
                 if (sum[j] < sum[j + 1]) {
                     tmp = sum[j];
                     sum[j] = sum[j + 1];
                     sum[j + 1] = tmp;
-
+                
                 }
 
 
@@ -55,24 +55,24 @@ void Sort(int* sum, int size, int type) {
 
 }
 
-void printArray(int* sum, int size) {
+void printArray(int* sum,int size) {
     for (int i = 0; i < size; i++) {
         cout << sum[i] << " ";
     }
-    cout << endl;
+    cout <<endl;
 }
 
 int main() {
     int num[5] = { 0 };
     int type = -1;
-
+    
     for (int i = 0; i < 5; i++) {
         cout << "숫자를 입력해주세요 : ";
-        cin >> num[i];
+            cin >> num[i];
     }
     for (int i = 0; i < 5; i++) {
         cout << num[i] << " ";
-
+       
     }
     cout << endl;
 
@@ -87,5 +87,5 @@ int main() {
     printArray(num, 5);
 
 
-    return 0;
+    return 0; 
 }
