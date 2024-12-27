@@ -1,13 +1,16 @@
+
+
+
 #include <iostream>
 using namespace std;
 
 class Animal {
-public : 
+public:
     Animal() {
         cout << "Animal持失切" << endl;
     }
 
-    void makeSound() = 0;
+    virtual void makeSound() = 0;
 
     ~Animal() {
         cout << "Animal社瑚切" << endl;
@@ -15,9 +18,9 @@ public :
     }
 };
 
-class Dog : Animal {
+class Dog : public Animal {
 
-public : 
+public:
     Dog() {
         cout << "Dog持失切" << endl;
     }
@@ -29,7 +32,7 @@ public :
     }
 
 };
-class Cat : Animal {
+class Cat : public Animal {
 
 public:
     Cat() {
@@ -43,7 +46,7 @@ public:
     }
 };
 
-class Cow : Animal {
+class Cow : public Animal {
 
 public:
     Cow() {
@@ -52,21 +55,32 @@ public:
     void makeSound() {
         cout << "Cow" << endl;
     }
-    ~Cat() {
+    ~Cow() {
         cout << "Cow社瑚切" << endl;
     }
 };
 
-void printAnimal(animal *a[],int size) {
-
+void printAnimal(Animal** a, int size) { //Animal **a //Animal *a[]
+    
+    for (int i = 0; i < size; i++) {
+        a[i]->makeSound();
+    }
 }
 
 
 int main() {
-    Animal* p[3] = animal;
-    p[0] = &Dog;
-    p[1] = &Cat;
-    p[2] = &Cow;
+
+    Animal* myAnimal[3];
+    
+    myAnimal[0] = new Dog();
+    myAnimal[1] = new Cat();
+    myAnimal[2] = new Cow();
+    
+    printAnimal(myAnimal, 3);
+
+    for (int i = 0; i < 3; i++) {
+        delete myAnimal[i];
+    }
 
     return 0;
 }
