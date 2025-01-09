@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\unrealPractice\\helloworld\\Source\\helloworld\\helloworld.Build.cs",
+		"C:\\unrealPractice\\helloworld\\Source\\helloworld.Target.cs",
+		"C:\\unrealPractice\\helloworld\\Source\\helloworldEditor.Target.cs"
+	],
+	"EngineVersion": "5.5.1"
+}

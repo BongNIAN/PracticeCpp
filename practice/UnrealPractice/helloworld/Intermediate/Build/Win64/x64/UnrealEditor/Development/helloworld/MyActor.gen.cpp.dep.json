@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealpractice\\helloworld\\intermediate\\build\\win64\\unrealeditor\\inc\\helloworld\\uht\\myactor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealpractice\\helloworld\\intermediate\\build\\win64\\x64\\helloworldeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealpractice\\helloworld\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\helloworld\\definitions.helloworld.h",
+            "c:\\unrealpractice\\helloworld\\source\\helloworld\\myactor.h",
+            "c:\\unrealpractice\\helloworld\\intermediate\\build\\win64\\unrealeditor\\inc\\helloworld\\uht\\myactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

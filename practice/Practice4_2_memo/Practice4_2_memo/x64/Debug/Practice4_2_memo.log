@@ -1,0 +1,3 @@
+﻿  practice_4_2.cpp
+C:\practiceCpp\PracticeCpp\practice\Practice4_2_memo\Practice4_2_memo\practice_4_2.cpp(642,33): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Practice4_2_memo.vcxproj -> C:\practiceCpp\PracticeCpp\practice\Practice4_2_memo\x64\Debug\Practice4_2_memo.exe

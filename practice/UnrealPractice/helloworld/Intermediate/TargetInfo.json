@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "helloworld",
+			"Path": "..\\Source\\helloworld.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "helloworldEditor",
+			"Path": "..\\Source\\helloworldEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
