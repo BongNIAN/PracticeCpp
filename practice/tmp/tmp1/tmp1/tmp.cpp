@@ -1025,7 +1025,9 @@ public:
 
 
         MonsterFactory m;
-        Shop s;
+       
+
+
         int UserSelection = 100000;
         shared_ptr<Monster>tmpMonster = m.CreateMonster(c->getLevel());
         Item* Testitem;
@@ -1092,7 +1094,7 @@ public:
             }
             else if (UserSelection == 2) 
             {
-                //인벤토리 
+                //인벤토리 캐릭터 인벤토리 
                
             }
             else if (UserSelection == 3) 
@@ -1139,6 +1141,8 @@ public:
 
     }
 
+  
+
 private:
   
 
@@ -1157,10 +1161,19 @@ int main() {
     auto gameOverHandler = make_shared<GameOverHandler>();
     c->Attach(gameOverHandler);
     c->Attach(playerObserver);
-    Beep(523, 500);
     
 
-    game.BattleStart(c);
+    
+    c->setAttack(3);
+    
+    sleep_for(milliseconds(300));
+
+    cout << "\033[A\r\033[K"; // 한 줄 위로 이동 후 지우기
+
+    
+    
+    c->setAttack(3);
+
 
     //PrintDeathMonster();
     //
