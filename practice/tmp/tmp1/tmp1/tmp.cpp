@@ -4,12 +4,258 @@
 #include <cstdlib>
 #include <ctime>
 #include<unordered_map>
+#define NOMINMAX
 #include<windows.h>
+#include <algorithm>
+#include <chrono>
+#include <thread>
+#include <limits>
 
+
+using namespace std::this_thread; // for sleep_for
+using namespace std::chrono;     // for milliseconds
 using namespace std;
-
+// 
+// 
 //데코레이터 달아서 엄청난 HealthPotion 이런느낌으로?
 // 플레이어 체력의 30%라면 + 20% 를 해주는느낌? 
+
+struct PlayerHp {
+    int CurrentHp = -1;
+    int MaxHp = -1;
+};
+
+struct MonsterHp {
+    int CurrentHp = -1;
+    int MaxHp = -1;
+};
+
+void drawHpBar(int currentHp, int maxHp, int barLength = 20) {
+    // Calculate the filled and empty portions of the bar
+    int filledLength = (currentHp * barLength) / maxHp;
+    int emptyLength = barLength - filledLength;
+
+    // Construct the HP bar
+    std::string green = "\033[42m \033[0m"; // Green block
+    std::string white = "\033[47m \033[0m"; // White block
+    std::string hpBar;
+    std::string red = "\033[41m \033[0m";
+
+    int filledLengthRed = static_cast<int>(barLength * 0.3);
+
+    if (filledLength < filledLengthRed)
+    {
+        for (int i = 0; i < filledLength; ++i) {
+            hpBar += red;
+        }
+
+    }
+
+    else
+    {
+        for (int i = 0; i < filledLength; ++i) {
+            hpBar += green;
+        }
+    }
+
+    for (int i = 0; i < emptyLength; ++i) {
+        hpBar += white;
+    }
+
+    // Print the HP bar
+    std::cout << "HP: [" << hpBar << "] " << currentHp << "/" << maxHp << std::endl;
+}
+
+
+void PrintLine(const string& line, int delay = 50) {
+    for (char c : line) {
+        cout << c << flush;
+        this_thread::sleep_for(chrono::milliseconds(delay));
+    }
+    cout << endl;
+}
+
+//메모장에 함수숨김현상과 오버로딩 의 차이
+// 그리고 해결법으로는 
+// 1. 인터페이스에서의 오버로딩 , .2 구조체 
+class IPlayerObserver {
+public:
+    virtual ~IPlayerObserver() = default;
+    virtual void UpdatePlayer( PlayerHp playerHp) = 0;
+};
+
+class IMonsterObserver {
+public:
+    virtual ~IMonsterObserver() = default;
+    virtual void UpdateMonster(const MonsterHp& monsterHp) = 0;
+};
+
+class PlayerObserver :public IPlayerObserver 
+{
+    void UpdatePlayer(const PlayerHp playerHp) 
+    {
+        drawHpBar(playerHp.CurrentHp, playerHp.MaxHp);
+    }
+};
+
+//class IPlayerLevelObserver {
+//public:
+//    virtual ~IPlayerLevelObserver() = default;
+//    virtual void UpdateLevel(Character* c, bool IsLevelup) = 0;
+//
+//};
+//class LevelObserver :public IPlayerLevelObserver {
+//public:
+//    virtual ~LevelObserver() = default;
+//    virtual void UpdateLevel(Character* c, bool IsLevelUp)
+//    {
+//        if (IsLevelUp)
+//        {
+//
+//
+//        }
+//    }
+//
+//};
+
+
+void printBossMonster() {
+    cout << R"(
+      ______
+   .-'      `-.
+  /            \
+ |,  .-.  .-.  ,|
+ | )(_o/  \o_)( |
+ |/     /\     \|
+ (_     ^^     _)
+  \__|IIIIII|__/
+   | \IIIIII/ |
+   \          /
+    `--------`
+    // \\  // \\
+   //   \\//   \\
+  ||     \/     ||
+
+     GAME OVER
+)" << endl;
+}
+
+void printMonster() {
+
+    cout << R"(    ,      ,        *       *
+      /(.-""-.)\     *    *        *
+  |\  \/      \/  /|     *
+  | \ / =.  .= \ / |  
+  \( \   o\/o   / )/
+   \_, '-/  \-' ,_/      *       *
+     /   \__/   \          *
+     \ \__/\__/ /            *
+   ___\ \|--|/ /___
+ /`    \      /    `\     
+/       '----'       \     
+)" << endl;
+
+}
+
+void printBattleWithMonster() 
+{
+    cout << R"(
+                     _____                     ,      ,
+                  .-'     '-.                /(.-""-.)\
+                 /           \           |\  \/      \/  /|
+                |   .-------. |          | \ / =.  .= \ / |
+                |  /         \\          \( \   o\/o   / )/
+                |  |    O    ||           \_, '-/  \-' ,_/
+                \  \         /              /   \__/   \
+                 '. '-------'               \ \__/\__/ /
+                   '.___._.'               ___\ \|--|/ /___
+                 //       \\             /`    \      /    `\
+                //         \\           /       '----'       \
+               ||    HERO   ||          ||      GOBLIN      ||
+               ||           ||          ||                 ||
+               ||           ||          ||                 ||
+)" << endl;
+}
+
+void PrintDeathMonster()
+{
+    cout << R"(
+        _______
+       /       \
+      /         \
+     |   x   x   |
+     |     ^     |
+      \___|_|___/       
+        /     \
+       /       \
+)" << endl;
+}
+
+//void printMonsterTestModule(shared_ptr<Monster> m)
+//{
+//    cout << "hp : " << m->GetHealth() << endl;
+//
+//    cout << " attack : " << m->GetAttack() << endl;
+//
+//
+//    cout << "name : " << m->GetName() << endl;
+//
+//}
+
+
+/**
+*  cout << "Hero: ";
+    drawHpBar(heroHp, heroMaxHp);
+    cout << "    Monster: ";
+    drawHpBar(goblinHp, goblinMaxHp);
+    cout << endl;
+      for (int i = 0; i < 5; ++i) {
+        this_thread::sleep_for(chrono::milliseconds(1000)); // 1초 딜레이
+
+        // 커서 이동 및 이전 출력 지우기
+        cout << "\033[A\r\033[K"; // 한 줄 위로 이동 후 지우기
+        cout << "\033[A\r\033[K"; // 또 한 줄 위로 이동 후 지우기
+
+        // 체력 감소
+        heroHp -= 10;
+        monsterHp -= 7;
+
+        // 업데이트된 HP 바 출력
+        cout << "Hero: ";
+        drawHpBar(heroHp, heroMaxHp);
+        cout << "    Monster: ";
+        drawHpBar(monsterHp, monsterMaxHp);
+        cout << endl;
+    }
+
+*/
+class GameOverHandler :public IPlayerObserver
+{
+    void UpdatePlayer( PlayerHp playerHp)
+    {
+        if (playerHp.CurrentHp <= 0)
+        {
+
+            printBossMonster();
+            PrintLine("uhahahahah");
+        }
+    }
+};
+
+
+
+
+//
+//class MonsterObserver :public IMonsterObserver
+//{
+//
+//};
+
+
+
+
+
+
 
 class Item {
 public:
@@ -24,6 +270,8 @@ public:
 	void use()
 	{
 		cout << "HealPotion" << endl;
+       
+      
 	}
 
 	string GetName() const
@@ -55,6 +303,15 @@ private:
 };
 
 
+/**
+* 
+* 아이템포퀘스트 ->is  -> 진엔딩 
+* 
+* 100% 예외확률 100%뽑기를 시작하기전에 
+* 뽑기할대 0.1%의 아이템이 
+* 
+*/
+
 class ItemForQuest :public Item {
 public:
     ItemForQuest() : name("ItemForQuest") {}
@@ -65,7 +322,7 @@ public:
 
     void use() {
 		cout << "ItemForQuest" << endl;
-	};
+	}
 
 private:
     string name;
@@ -83,6 +340,7 @@ private:
 
 
 
+
 class Character {
 public:
     // Delete copy constructor and assignment operator
@@ -97,6 +355,25 @@ public:
         return instance.get();
     }
 
+    void Attach(const shared_ptr<IPlayerObserver>& observer) {
+        observers.push_back(observer);
+    }
+
+    // 옵저버 제거
+    void Detach(const shared_ptr<IPlayerObserver>& observer) {
+        observers.erase(remove(observers.begin(), observers.end(), observer), observers.end());
+    }
+
+    // 상태 변경 시 모든 옵저버에게 알림
+    void Notify() {
+        for (const auto& observer : observers) {
+            PlayerHp hp = { health ,maxHealth };
+            observer->UpdatePlayer(hp);
+        }
+    }
+    
+
+
     void displayStatus() const {
         cout << "Name: " << name << endl;
         cout << "Level: " << level << endl;
@@ -106,6 +383,11 @@ public:
         cout << "Gold: " << gold << endl;
     }
 
+    int getLevel() 
+    {
+        return this->level;
+    }
+
     void levelUp() {
         level++;
         maxHealth += 20;
@@ -113,6 +395,9 @@ public:
         attack += 5;
         cout << name << " leveled up to Level " << level << "!" << endl;
     }
+
+    int getATK() { return attack; }
+
 
     void useItem(Item* item) {
         auto it = inventoryTest.find(item);
@@ -140,6 +425,13 @@ public:
     int GetMaxHealth() { return maxHealth; }
     void setAttack(int damage) {
         this->health -= damage;
+        Notify();
+    }
+    void TakeDamage(int damage) 
+    {
+        health -= damage;
+        if (health < 0) health = 0;
+        Notify();
     }
 
 private:
@@ -148,7 +440,7 @@ private:
         : name(name), level(1), health(100), maxHealth(100), attack(10), experience(0), gold(0) {
     }
 
-    static unique_ptr<Character> instance; // Singleton instance
+    static unique_ptr<Character> instance; 
 
     string name;
     int level;
@@ -157,9 +449,9 @@ private:
     int attack;
     int experience;
     int gold;
-
-    unordered_map<Item*, int> inventoryTest; // Item and its count
-    vector<Item*> inventory; // List of items in inventory
+    vector<shared_ptr<IPlayerObserver>> observers;
+    unordered_map<Item*, int> inventoryTest;
+    vector<Item*> inventory; 
 };
 
 // Initialize the static instance pointer
@@ -223,6 +515,8 @@ string CreateGradeByCDF() {
 
 
 }
+
+
 
 //Create MonsterClass
 class Monster 
@@ -697,62 +991,159 @@ public:
 
 
 
-void drawHpBar(int currentHp, int maxHp, int barLength = 20) {
-    // Calculate the filled and empty portions of the bar
-    int filledLength = (currentHp * barLength) / maxHp;
-    int emptyLength = barLength - filledLength;
-
-    // Construct the HP bar
-    std::string green = "\033[42m \033[0m"; // Green block
-    std::string white = "\033[47m \033[0m"; // White block
-    std::string hpBar;
-    std::string red = "\033[41m \033[0m";
-
-    int filledLengthRed = static_cast<int>(barLength * 0.3);
-
-    if (filledLength < filledLengthRed)
-    {
-        for (int i = 0; i < filledLength; ++i) {
-            hpBar += red;
-        }
-
-    }
-
-    else
-    {
-        for (int i = 0; i < filledLength; ++i) {
-            hpBar += green;
-        }
-    }
-
-    for (int i = 0; i < emptyLength; ++i) {
-        hpBar += white;
-    }
-
-    // Print the HP bar
-    std::cout << "HP: [" << hpBar << "] " << currentHp << "/" << maxHp << std::endl;
+void clearConsole() {
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif
 }
 
 
-//FrameWork.cpp가 뭐지?
 
-class GameManager {
+
+class Shop {
 public:
-    GameManager(Character* c)
-    {
-        p2 = c;
-
-    }
-    int test() {
-       return  this->p2->GetHealth();
-    }
-
-private :
-   Character* p2;
-  
-
+    Shop() {}
 };
 
+
+
+//배ㅔ틀 구현해놓고, 메인에서 while(1)다록 제대로 구현 
+class GameManager {
+public:
+    GameManager(){}
+
+    
+
+    void test(Character *c) {
+        cout << "im Gm" << c->GetHealth() << endl;
+    }
+
+    void BattleStart(Character *c) 
+    {
+
+
+        MonsterFactory m;
+        Shop s;
+        int UserSelection = 100000;
+        shared_ptr<Monster>tmpMonster = m.CreateMonster(c->getLevel());
+        Item* Testitem;
+        PrintLine("grrrrrr");
+        /*printMonsterTestModule(tmpMonster);*/
+        //유저 선택지 , 아이템 선택 할건지 ? 공격할건지?
+        //
+
+        
+        printBattleWithMonster();
+
+
+        while (1) {
+
+            
+            sleep_for(milliseconds(300));
+
+            cout << "1.몬스터 공격 2.인벤토리 3.도망가기  선택 : ";
+            cin >> UserSelection;
+            
+            if (cin.fail() || (UserSelection != 1 && UserSelection != 2 && UserSelection != 3)) {
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                
+                cout << "잘못된 입력입니다. 올바른 수를 입력하세요 !" << endl;
+                continue;
+            }
+            if (UserSelection == 1) 
+            {
+                
+                tmpMonster->TakeDamage(c->getATK());
+                c->TakeDamage(tmpMonster->GetAttack());
+
+                cout << "remaining MonsterHp is : " << tmpMonster->GetHealth() << endl;
+
+                
+
+                /**무승부시 gameOver */ //플레이어가 죽을 경우에는 게임오버하고 아예 끝?
+                if (c->GetHealth() < 0)
+                {
+                    break; 
+              
+
+                }
+                else if (tmpMonster->GetHealth() < 0)
+                {  
+                    cout << "Victory" << endl;
+
+                    //경험치 얼마 ,골드 얼마  
+                //경험치 로직 exp -------> LevelUpHandler ("레벨업을 했다라는 문구 "  status가 얼마에서 얼마로 늘어났다 ) 
+                //다시 인터페이스로 
+                      // 도망가면 드랍하고 , 30% 랜덤한 아이템 확률
+            //레벨업구도 어떻게 할건지 
+            //전두 통료시 경험치 획득,골드 획득, 
+            // 
+                   
+
+                    break;
+
+                }
+
+
+
+            }
+            else if (UserSelection == 2) 
+            {
+                //인벤토리 
+               
+            }
+            else if (UserSelection == 3) 
+            {
+                if (IsCreateEvent(50))
+                {
+                    cout << "ㅋㅋ ㅄ" << endl;
+                    break;
+                   
+                }
+                else 
+                {
+
+                    //hp잃고 도망
+                    int current = c->GetHealth();
+                    int lostHp = static_cast<int>(current * 0.3);
+                    c->TakeDamage(lostHp);
+
+                    //30% 잃는것 : getHelth 
+                    
+                    //랜덤 아이템 잃는다 
+                    // index -> 
+                    if (IsCreateEvent(60)) 
+                    {
+                        GenerateRandom(1, 10); //c->inventory[i] 지우기 
+                        //deleteinventory()
+                    }
+                    
+
+                    
+                    cout << "도망가기 실패" << endl;
+                    continue;
+                }
+            }
+
+          
+        }
+        
+
+        
+
+
+
+
+    }
+
+private:
+  
+
+
+};
 
 int main() {
 
@@ -760,14 +1151,37 @@ int main() {
     Character* c = Character::getInstance("Hero");
     BossMonsterFactory boss;
     MonsterFactory monst;
-    for (int i = 0; i < 100; i++)
-    {
-        boss.CreateBossMonster(i);
-    }
-    for (int i = 0; i < 100; i++)
-    {
-        monst.CreateMonster(i);
-    }
+    GameManager game;
+  
+    auto playerObserver = make_shared<PlayerObserver>();
+    auto gameOverHandler = make_shared<GameOverHandler>();
+    c->Attach(gameOverHandler);
+    c->Attach(playerObserver);
+    Beep(523, 500);
+    
+
+    game.BattleStart(c);
+
+    //PrintDeathMonster();
+    //
+    //c->setAttack(3);
+    ///*game.Battle(c);*/
+    //sleep_for(milliseconds(2000));
+    //cout << "\033[A\r\033[K"; // 한 줄 위로 이동 후 지우기
+    //cout << "\033[A\r\033[K"; // 또 한 줄 위로 이동 후 지우기
+    //
+    //sleep_for(milliseconds(1000));
+
+    //c->setAttack(3);
+    //sleep_for(milliseconds(1000));
+    //cout << "\033[A\r\033[K"; // 한 줄 위로 이동 후 지우기
+    //c->setAttack(3);
+    //sleep_for(milliseconds(1000));
+    //cout << "\033[A\r\033[K"; // 한 줄 위로 이동 후 지우기
+    //c->setAttack(3);
+    //sleep_for(milliseconds(1000));
+    //cout << "\033[A\r\033[K"; // 한 줄 위로 이동 후 지우기
+    //c->setAttack(3);
 
 	return 0;
 }
@@ -791,6 +1205,66 @@ int main() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//cout << "Hero: ";
+//drawHpBar(heroHp, heroMaxHp);
+//cout << "    Monster: ";
+//drawHpBar(goblinHp, goblinMaxHp);
+//cout << endl;
+
+
+
+
+
+/**
+* 
+* 
+* PrintLine("\nThe battle begins!");
+    int goblinHealth = 50;
+    int heroAttack = 20;
+
+    while (goblinHealth > 0) {
+        // 히어로 공격
+        PrintLine("\nHERO: \"This ends now!\"", 70);
+        this_thread::sleep_for(chrono::milliseconds(500));
+        PrintLine(">>> HERO slashes the GOBLIN with a mighty strike!", 50);
+        goblinHealth -= heroAttack;
+        if (goblinHealth > 0) {
+            PrintLine("GOBLIN: \"Raaaargh! Is that all you've got?!\"", 70);
+            PrintLine("GOBLIN's health: " + to_string(goblinHealth) + " HP\n", 50);
+        } else {
+            PrintLine("GOBLIN: \"No... this cannot be...\"", 70);
+            break;
+        }
+
+        this_thread::sleep_for(chrono::seconds(1));
+    }
+
+    // 고블린 사망 연출
+    PrintLine("\n>>> GOBLIN collapses to the ground, defeated.", 50);
+    PrintLine("HERO: \"Rest in pieces, monster.\"", 70);
+
+    // 엔딩 연출
+    this_thread::sleep_for(chrono::seconds(2));
+    PrintLine("\nThe HERO stands victorious amidst the ruins...");
+    PrintLine("But the fight is far from over...");
+    PrintLine("Darkness looms on the horizon...");
+    PrintLine("\n[TO BE CONTINUED...]", 100);
+
+*/
 
 
 

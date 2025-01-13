@@ -1,2 +1,3 @@
 ﻿  tmp.cpp
+C:\practiceCpp\PracticeCpp\practice\tmp\tmp1\tmp1\tmp.cpp(1031,15): warning C4101: 'Testitem' :참조되지 않은 지역 변수입니다.
   tmp1.vcxproj -> C:\practiceCpp\PracticeCpp\practice\tmp\tmp1\x64\Debug\tmp1.exe
