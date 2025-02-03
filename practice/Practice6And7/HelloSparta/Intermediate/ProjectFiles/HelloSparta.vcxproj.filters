@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\HelloSparta.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HelloSparta.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\HelloSpartaEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\HelloSparta">
+      <UniqueIdentifier>{331211FD-2E6C-3A86-8FD0-B519BD1FAF71}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HelloSparta\ActorToSpawn.cpp">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\ActorToSpawn.h">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <None Include="..\..\Source\HelloSparta\HelloSparta.Build.cs">
+      <Filter>Source\HelloSparta</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\HelloSparta\HelloSparta.cpp">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\HelloSparta.h">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\Item.cpp">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\Item.h">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\LotatedActor.cpp">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\LotatedActor.h">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\MoveActor.cpp">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\MoveActor.h">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\SpawningActor.cpp">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\SpawningActor.h">
+      <Filter>Source\HelloSparta</Filter>
+    </ClCompile>
+    <Filter Include="Source\HelloSparta\Private">
+      <UniqueIdentifier>{916C6EB3-E94D-33C9-B176-F0AB5B1556A6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HelloSparta\Private\MyGameMode.cpp">
+      <Filter>Source\HelloSparta\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\Private\MyPawn.cpp">
+      <Filter>Source\HelloSparta\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\Private\MyPlayerController.cpp">
+      <Filter>Source\HelloSparta\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\HelloSparta\Public">
+      <UniqueIdentifier>{2D234F98-71C5-3992-A2F6-085D44308572}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HelloSparta\Public\MyGameMode.h">
+      <Filter>Source\HelloSparta\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\Public\MyPawn.h">
+      <Filter>Source\HelloSparta\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HelloSparta\Public\MyPlayerController.h">
+      <Filter>Source\HelloSparta\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

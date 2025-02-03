@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "HelloSparta",
+			"Path": "..\\Source\\HelloSparta.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "HelloSpartaEditor",
+			"Path": "..\\Source\\HelloSpartaEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
