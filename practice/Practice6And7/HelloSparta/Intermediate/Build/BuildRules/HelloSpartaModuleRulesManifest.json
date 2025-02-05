@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\HelloSparta\\Source\\HelloSparta\\HelloSparta.Build.cs",
-		"C:\\HelloSparta\\Source\\HelloSparta.Target.cs",
-		"C:\\HelloSparta\\Source\\HelloSpartaEditor.Target.cs"
-	],
-	"EngineVersion": "5.5.1"
-}
