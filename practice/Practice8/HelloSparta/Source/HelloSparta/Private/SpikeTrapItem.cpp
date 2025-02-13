@@ -5,9 +5,10 @@
 ASpikeTrapItem::ASpikeTrapItem()
 {
     ItemType = "SpikeTrap";
-    Amplitude = 50.f;
+    Amplitude = 500.f;
     Frequency = 1.f;
     Damage = 30.f;
+    PrimaryActorTick.bCanEverTick = true;
 }
 void ASpikeTrapItem::ActivateItem(AActor* Activator)
 {
@@ -39,9 +40,10 @@ void ASpikeTrapItem::BeginPlay()
 void ASpikeTrapItem::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-    float SineValue = FMath::Sin(GetWorld()->GetTimeSeconds() * Frequency * 2 * PI);
-    float DeltaZ = Amplitude * SineValue;
+    float TimeSeconds = GetWorld()->GetTimeSeconds();
+    float NormalizedValue = (1 - FMath::Cos(2 * PI * Frequency * TimeSeconds)) / 2.0f;
+    float DeltaZ = Amplitude * NormalizedValue;
     FVector NewLocation = InitialLocation;
-    NewLocation.Z += DeltaZ;
+    NewLocation.Z += DeltaZ; 
     SetActorLocation(NewLocation);
 }

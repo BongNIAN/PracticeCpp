@@ -76,7 +76,9 @@
             "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\baseitem.generated.h",
             "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\coinitem.generated.h",
             "c:\\hellosparta\\source\\hellosparta\\public\\wavepassitem.h",
-            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\wavepassitem.generated.h"
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\wavepassitem.generated.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\spiketrapitem.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\spiketrapitem.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

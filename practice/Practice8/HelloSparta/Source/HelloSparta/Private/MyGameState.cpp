@@ -7,6 +7,7 @@
 #include "Blueprint/UserWidget.h"
 #include "CoinItem.h"
 #include "WavePassItem.h"
+#include "SpikeTrapItem.h"
 
 AMyGameState::AMyGameState()
 {
@@ -247,13 +248,27 @@ void AMyGameState::SpawnRandom()
 			ASpawnVolume* SpawnVolume = Cast<ASpawnVolume>(FoundVolumes[0]);
 			if (SpawnVolume)
 			{
-				//SpawnVolume->SpawnItem(TrapItem);
+				for (int i = 0; i < 5; i++) 
+				{
+					SpawnVolume->SpawnItem(TrapItem);
+				}
 			}
 		}
 		
 	}
 	if (WaveCount == 3)
 	{
+		if (FoundVolumes.Num() > 0)
+		{
+			ASpawnVolume* SpawnVolume = Cast<ASpawnVolume>(FoundVolumes[0]);
+			if (SpawnVolume)
+			{
+				for (int i = 0; i < 10; i++)
+				{
+					SpawnVolume->SpawnItem(TrapItem);
+				}
+			}
+		}
 	}
 }
 void AMyGameState::NextWave()
@@ -275,9 +290,9 @@ void AMyGameState::NextWave()
 			}
 			SpawnedItems.Reset();
 		}
-		SpawnRandom();
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Green, FString::Printf(TEXT("Wave %d Start"), WaveCount + 1));
 		WaveCount++;
+		SpawnRandom();
+		
 	}
 }
 

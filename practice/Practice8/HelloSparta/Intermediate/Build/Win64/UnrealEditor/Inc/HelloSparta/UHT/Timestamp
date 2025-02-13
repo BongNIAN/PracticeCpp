@@ -1,11 +1,11 @@
 C:\HelloSparta\Source\HelloSparta\Public\BaseItem.h
-C:\HelloSparta\Source\HelloSparta\Public\BigCoinItem.h
 C:\HelloSparta\Source\HelloSparta\Public\CoinItem.h
+C:\HelloSparta\Source\HelloSparta\Public\BigCoinItem.h
 C:\HelloSparta\Source\HelloSparta\Public\HealingItem.h
 C:\HelloSparta\Source\HelloSparta\Public\ItemInterface.h
 C:\HelloSparta\Source\HelloSparta\Public\ItemSpawnRow.h
-C:\HelloSparta\Source\HelloSparta\Public\MineItem.h
 C:\HelloSparta\Source\HelloSparta\Public\MyGameInstance.h
+C:\HelloSparta\Source\HelloSparta\Public\MineItem.h
 C:\HelloSparta\Source\HelloSparta\Public\MyGameMode.h
 C:\HelloSparta\Source\HelloSparta\Public\MyGameState.h
 C:\HelloSparta\Source\HelloSparta\Public\MyPawn.h
