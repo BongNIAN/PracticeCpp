@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\lotatedactor.gen.cpp",
+        "Source": "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\lotatedactor.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h",
-            "c:\\hellosparta\\source\\hellosparta\\lotatedactor.h",
-            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\lotatedactor.generated.h"
+            "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h",
+            "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\source\\hellosparta\\lotatedactor.h",
+            "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\lotatedactor.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

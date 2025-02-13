@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\hellosparta.init.gen.cpp",
+        "Source": "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\hellosparta.init.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h"
+            "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

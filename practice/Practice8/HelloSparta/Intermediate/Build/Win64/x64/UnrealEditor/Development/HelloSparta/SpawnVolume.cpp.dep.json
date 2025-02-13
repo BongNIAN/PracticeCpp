@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\hellosparta\\source\\hellosparta\\private\\spawnvolume.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\spawnvolume.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\itemspawnrow.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\itemspawnrow.generated.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\spawnvolume.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

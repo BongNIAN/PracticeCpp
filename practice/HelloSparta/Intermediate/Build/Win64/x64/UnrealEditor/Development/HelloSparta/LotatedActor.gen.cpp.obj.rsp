@@ -1,12 +1,12 @@
-"C:\HelloSparta\Intermediate\Build\Win64\UnrealEditor\Inc\HelloSparta\UHT\LotatedActor.gen.cpp"
-/FI"C:\HelloSparta\Intermediate\Build\Win64\x64\HelloSpartaEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\Definitions.HelloSparta.h"
-/Yu"C:\HelloSparta\Intermediate\Build\Win64\x64\HelloSpartaEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\HelloSparta\Intermediate\Build\Win64\x64\HelloSpartaEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\LotatedActor.gen.cpp.obj"
-/experimental:log "C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\LotatedActor.gen.cpp.sarif"
-/sourceDependencies "C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\LotatedActor.gen.cpp.dep.json"
-@"C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\HelloSparta.Shared.rsp"
+"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\UnrealEditor\Inc\HelloSparta\UHT\LotatedActor.gen.cpp"
+/FI"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\HelloSpartaEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\Definitions.HelloSparta.h"
+/Yu"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\HelloSpartaEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\HelloSpartaEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\LotatedActor.gen.cpp.obj"
+/experimental:log "C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\LotatedActor.gen.cpp.sarif"
+/sourceDependencies "C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\LotatedActor.gen.cpp.dep.json"
+@"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\HelloSparta.Shared.rsp"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

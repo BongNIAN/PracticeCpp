@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define HELLOSPARTA_LotatedActor_generated_h
 
-#define FID_HelloSparta_Source_HelloSparta_LotatedActor_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesALotatedActor(); \
 	friend struct Z_Construct_UClass_ALotatedActor_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ALotatedActor)
 
 
-#define FID_HelloSparta_Source_HelloSparta_LotatedActor_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ALotatedActor(ALotatedActor&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~ALotatedActor();
 
 
-#define FID_HelloSparta_Source_HelloSparta_LotatedActor_h_9_PROLOG
-#define FID_HelloSparta_Source_HelloSparta_LotatedActor_h_12_GENERATED_BODY \
+#define FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_9_PROLOG
+#define FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HelloSparta_Source_HelloSparta_LotatedActor_h_12_INCLASS_NO_PURE_DECLS \
-	FID_HelloSparta_Source_HelloSparta_LotatedActor_h_12_ENHANCED_CONSTRUCTORS \
+	FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_12_INCLASS_NO_PURE_DECLS \
+	FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> HELLOSPARTA_API UClass* StaticClass<class ALotatedActor>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_HelloSparta_Source_HelloSparta_LotatedActor_h
+#define CURRENT_FILE_ID FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

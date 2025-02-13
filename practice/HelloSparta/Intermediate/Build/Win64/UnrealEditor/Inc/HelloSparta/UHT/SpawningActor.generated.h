@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define HELLOSPARTA_SpawningActor_generated_h
 
-#define FID_HelloSparta_Source_HelloSparta_SpawningActor_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASpawningActor(); \
 	friend struct Z_Construct_UClass_ASpawningActor_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ASpawningActor)
 
 
-#define FID_HelloSparta_Source_HelloSparta_SpawningActor_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASpawningActor(); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~ASpawningActor();
 
 
-#define FID_HelloSparta_Source_HelloSparta_SpawningActor_h_12_PROLOG
-#define FID_HelloSparta_Source_HelloSparta_SpawningActor_h_15_GENERATED_BODY \
+#define FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_12_PROLOG
+#define FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HelloSparta_Source_HelloSparta_SpawningActor_h_15_INCLASS_NO_PURE_DECLS \
-	FID_HelloSparta_Source_HelloSparta_SpawningActor_h_15_ENHANCED_CONSTRUCTORS \
+	FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_15_INCLASS_NO_PURE_DECLS \
+	FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,7 +50,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> HELLOSPARTA_API UClass* StaticClass<class ASpawningActor>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_HelloSparta_Source_HelloSparta_SpawningActor_h
+#define CURRENT_FILE_ID FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

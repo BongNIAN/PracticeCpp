@@ -53,8 +53,9 @@ void ASpawningActor::OnParentEventHandler()
 			}
 		}
 
-		/**Spawn Actor*/
-		AActorToSpawn* tmp = GetWorld()->SpawnActor<AActorToSpawn>(ActorToSpawnClass,tmpLocation, tmpRotation);
+
+		//여기 CLASS2임 헷갈리지말기 
+		AActorToSpawn* tmp = GetWorld()->SpawnActor<AActorToSpawn>(ActorToSpawnClass2,tmpLocation, tmpRotation);
 		if (tmp)
 		{
 			/**스폰된 액터를 관리하는 TArray*/

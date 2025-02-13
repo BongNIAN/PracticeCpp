@@ -263,14 +263,14 @@ AItem::~AItem() {}
 // End Class AItem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_Item_h_Statics
+struct Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_Item_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AItem, AItem::StaticClass, TEXT("AItem"), &Z_Registration_Info_UClass_AItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItem), 90724873U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_Item_h_2587592072(TEXT("/Script/HelloSparta"),
-	Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_Item_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_Item_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_Item_h_2587592072(TEXT("/Script/HelloSparta"),
+	Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_Item_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_Item_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeSpawningActor() {}
 
 // Begin Cross Module References
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 HELLOSPARTA_API UClass* Z_Construct_UClass_AActorToSpawn_NoRegister();
 HELLOSPARTA_API UClass* Z_Construct_UClass_AMoveActor();
 HELLOSPARTA_API UClass* Z_Construct_UClass_ASpawningActor();
@@ -32,7 +33,7 @@ struct Z_Construct_UClass_ASpawningActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n* \n*/" },
 #endif
 		{ "IncludePath", "SpawningActor.h" },
 		{ "ModuleRelativePath", "SpawningActor.h" },
@@ -47,8 +48,13 @@ struct Z_Construct_UClass_ASpawningActor_Statics
 		{ "ToolTip", "Bp\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xc5\xac\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActorToSpawnClass2_MetaData[] = {
+		{ "Category", "Spawn" },
+		{ "ModuleRelativePath", "SpawningActor.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_ActorToSpawnClass;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_ActorToSpawnClass2;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -57,8 +63,10 @@ struct Z_Construct_UClass_ASpawningActor_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpawningActor_Statics::NewProp_ActorToSpawnClass = { "ActorToSpawnClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawningActor, ActorToSpawnClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AActorToSpawn_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActorToSpawnClass_MetaData), NewProp_ActorToSpawnClass_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpawningActor_Statics::NewProp_ActorToSpawnClass2 = { "ActorToSpawnClass2", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpawningActor, ActorToSpawnClass2), Z_Construct_UClass_UClass, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActorToSpawnClass2_MetaData), NewProp_ActorToSpawnClass2_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpawningActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawningActor_Statics::NewProp_ActorToSpawnClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawningActor_Statics::NewProp_ActorToSpawnClass2,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASpawningActor_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ASpawningActor_Statics::DependentSingletons[])() = {
@@ -99,14 +107,14 @@ ASpawningActor::~ASpawningActor() {}
 // End Class ASpawningActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_SpawningActor_h_Statics
+struct Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpawningActor, ASpawningActor::StaticClass, TEXT("ASpawningActor"), &Z_Registration_Info_UClass_ASpawningActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawningActor), 2948612335U) },
+		{ Z_Construct_UClass_ASpawningActor, ASpawningActor::StaticClass, TEXT("ASpawningActor"), &Z_Registration_Info_UClass_ASpawningActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawningActor), 4138891630U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_SpawningActor_h_2066035502(TEXT("/Script/HelloSparta"),
-	Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_SpawningActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_SpawningActor_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_475566861(TEXT("/Script/HelloSparta"),
+	Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_SpawningActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

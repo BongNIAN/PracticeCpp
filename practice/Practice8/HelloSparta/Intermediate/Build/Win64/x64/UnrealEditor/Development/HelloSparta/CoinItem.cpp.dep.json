@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\hellosparta\\source\\hellosparta\\private\\coinitem.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\coinitem.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\baseitem.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\iteminterface.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\iteminterface.generated.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\baseitem.generated.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\coinitem.generated.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\mygamestate.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestate.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestatebase.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestatebase.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestate.generated.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\mygamestate.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

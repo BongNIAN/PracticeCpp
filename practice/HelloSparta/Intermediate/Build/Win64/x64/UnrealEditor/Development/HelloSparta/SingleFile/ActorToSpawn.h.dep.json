@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\singlefile\\actortospawn.h.cpp",
+        "Source": "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\singlefile\\actortospawn.h.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h",
-            "c:\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\shareddefinitions.unrealed.project.valapi.cpp20.h",
-            "c:\\hellosparta\\source\\hellosparta\\actortospawn.h",
+            "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h",
+            "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\shareddefinitions.unrealed.project.valapi.cpp20.h",
+            "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\source\\hellosparta\\actortospawn.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\coreminimal.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\coretypes.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\platform.h",
@@ -676,7 +676,7 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\misc\\paths.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\public\\worldpartition\\worldpartitionactordesctype.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\actor.generated.h",
-            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\actortospawn.generated.h"
+            "c:\\practicecpp\\practicecpp\\practice\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\actortospawn.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

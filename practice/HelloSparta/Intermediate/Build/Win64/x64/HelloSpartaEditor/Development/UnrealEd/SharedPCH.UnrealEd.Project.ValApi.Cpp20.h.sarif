@@ -10,7 +10,7 @@
                         "text": "'FBoneMirrorInfo': FBoneMirrorInfo is deprecated. Please use UMirrorDataTable for mirroring support. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///C:/HelloSparta/Intermediate/Build/Win64/x64/HelloSpartaEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.Cpp20.cpp"
+                        "uri": "file:///C:/practiceCpp/PracticeCpp/practice/HelloSparta/Intermediate/Build/Win64/x64/HelloSpartaEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.Cpp20.cpp"
                     },
                     "locations": [
                         {

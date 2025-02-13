@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\hellosparta\\source\\hellosparta\\private\\healingitem.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\hellosparta\\intermediate\\build\\win64\\x64\\hellospartaeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\hellosparta\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hellosparta\\definitions.hellosparta.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\healingitem.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\baseitem.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\iteminterface.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\iteminterface.generated.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\baseitem.generated.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\healingitem.generated.h",
+            "c:\\hellosparta\\source\\hellosparta\\public\\mypawn.h",
+            "c:\\hellosparta\\intermediate\\build\\win64\\unrealeditor\\inc\\hellosparta\\uht\\mypawn.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

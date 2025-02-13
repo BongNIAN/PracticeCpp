@@ -120,14 +120,14 @@ AMoveActor::~AMoveActor() {}
 // End Class AMoveActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_MoveActor_h_Statics
+struct Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_MoveActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AMoveActor, AMoveActor::StaticClass, TEXT("AMoveActor"), &Z_Registration_Info_UClass_AMoveActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMoveActor), 594461873U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_MoveActor_h_3304770011(TEXT("/Script/HelloSparta"),
-	Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_MoveActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_MoveActor_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_MoveActor_h_3304770011(TEXT("/Script/HelloSparta"),
+	Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_MoveActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_MoveActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

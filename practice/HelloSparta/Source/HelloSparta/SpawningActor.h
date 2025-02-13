@@ -7,12 +7,13 @@
 #include "SpawningActor.generated.h"
 
 /**
- * 
- */
+* 
+*/
 UCLASS()
 class HELLOSPARTA_API ASpawningActor : public AMoveActor
 {
 	GENERATED_BODY()
+
 protected:
 	
 	virtual void BeginPlay() override;
@@ -24,6 +25,11 @@ protected:
 	/**Bp를 담는 클래스 */
 	UPROPERTY(EditAnywhere, Category = "Spawn")
 	TSubclassOf<AActorToSpawn> ActorToSpawnClass;
+
+	UPROPERTY(EditAnywhere, Category = "Spawn")
+	UClass* ActorToSpawnUclass;
+	
+
 };
 
 /**

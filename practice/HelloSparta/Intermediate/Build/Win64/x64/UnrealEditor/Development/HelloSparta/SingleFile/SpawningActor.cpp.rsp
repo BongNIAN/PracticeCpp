@@ -1,14 +1,14 @@
-"C:\HelloSparta\Source\HelloSparta\SpawningActor.cpp"
+"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Source\HelloSparta\SpawningActor.cpp"
 /external:W0
 /external:I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\INCLUDE"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\Definitions.HelloSparta.h"
-/Fo"C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\SingleFile\SpawningActor.cpp.obj"
-/sourceDependencies "C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\SingleFile\SpawningActor.cpp.dep.json"
-@"C:\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\HelloSparta.Shared.rsp"
+/FI"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\Definitions.HelloSparta.h"
+/Fo"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\SingleFile\SpawningActor.cpp.obj"
+/sourceDependencies "C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\SingleFile\SpawningActor.cpp.dep.json"
+@"C:\practiceCpp\PracticeCpp\practice\HelloSparta\Intermediate\Build\Win64\x64\UnrealEditor\Development\HelloSparta\HelloSparta.Shared.rsp"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

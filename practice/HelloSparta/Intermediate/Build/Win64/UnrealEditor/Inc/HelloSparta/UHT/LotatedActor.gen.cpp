@@ -123,14 +123,14 @@ ALotatedActor::~ALotatedActor() {}
 // End Class ALotatedActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_LotatedActor_h_Statics
+struct Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ALotatedActor, ALotatedActor::StaticClass, TEXT("ALotatedActor"), &Z_Registration_Info_UClass_ALotatedActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALotatedActor), 2623671707U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_LotatedActor_h_3262791986(TEXT("/Script/HelloSparta"),
-	Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_LotatedActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HelloSparta_Source_HelloSparta_LotatedActor_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_3262791986(TEXT("/Script/HelloSparta"),
+	Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_practiceCpp_PracticeCpp_practice_HelloSparta_Source_HelloSparta_LotatedActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
