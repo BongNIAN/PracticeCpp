@@ -149,4 +149,19 @@ float AMyActor::distance(FVector2D tmp)
 	// y의 차이는 tmp.y
 	// cuz ) before.x + tmp.x = after.x
 	return FMath::Sqrt(dx * dx + dy * dy);
+
+
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! evCnt  is %d"), this->evCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! ev  X   Cnt  is %d"), this->evXCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! ev   Y   Cnt  is %d"), this->evYCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! totDist  is %d"), static_cast<int>(this->totDist));
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! evCnt  is %d"), this->evCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! ev  X   Cnt  is %d"), this->evXCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! ev   Y   Cnt  is %d"), this->evYCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! totDist  is %d"), static_cast<int>(this->totDist));
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! evCnt  is %d"), this->evCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! ev  X   Cnt  is %d"), this->evXCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! ev   Y   Cnt  is %d"), this->evYCnt);
+	UE_LOG(LogTemp, Warning, TEXT("MoveEnd !!! totDist  is %d"), static_cast<int>(this->totDist));
 }
+//
